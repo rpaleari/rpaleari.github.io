@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Custom: customizations not included into Minimal Mistakes
+   ========================================================================== */
+
+div.cust__pub {
+    margin-bottom: 1.5em;
+}
+
+div.pubtitle {
+    font-weight: bold;
+}
+
+div.pubauthors {
+    font-weight: normal;
+    font-style: italic;
+    font-size: $type-size-6;
+}
+
+div.pubconf {
+    font-weight: normal;
+    font-size: $type-size-6;
+}
+
+div.pubbibtex {
+    font-weight: normal;
+    font-size: $type-size-7;
+}
+
+div.cust__project {
+    margin-bottom: 2.5em;
+
+    h2 {
+	margin-top: 1em;
+    }
+}
+
+.cust__jointpost {
+    text-align: right;
+    color: grey;
+    font-size: 90%;
+}
+
+table#cust__hacking td, table#cust__hacking th {
+    text-align: center;
+}
+
+/* Align text */
+div#main {
+    text-align: justify;
+}
+
+/* Customizations to other SCSS files. We group them here to minimize changes
+to the original template files. */
+
+/* Remove animations on link focus */
+a {
+  &:focus, :focus {
+    outline: 0;
+  }
+}
+
+/* Shrink header size */
+.page__hero {
+  &--overlay {
+      padding: 1.5em 0;
+
+      .page__title {
+	  margin-bottom: 0em;
+      }
+  }
+}
+
+/* Local Variables: */
+/* mode: css */
+/* End: */

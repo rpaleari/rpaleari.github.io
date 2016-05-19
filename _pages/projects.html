@@ -1,0 +1,36 @@
+---
+title: Projects
+permalink: /projects.html
+---
+{% for project in site.data.projects %}
+<article>
+  <div class="cust__project">
+    <!-- {{ project.name }} -->
+    <h2>
+      {% if project.link %}
+      <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+      {% else %}
+      {{ project.title }}
+      {% endif %}
+    </h2>
+    <p>{{ project.body | markdownify }}</p>
+    {% if project.contributors %}
+    <p>{{ project.name }} is developed with
+      {% assign contrib_index = 1 %}
+      {% for nick in project.contributors %}
+	{% assign contributor = site.data.contributors[nick] %}
+	{% if contributor.link %}
+	  <a href="{{ contributor.link }}" target="_blank">{{ contributor.name }}</a>
+	{% else %}
+	  {{ contributor.name }}
+	{% endif %}
+	{% if contrib_index < project.contributors.size %}
+	  and
+	{% endif %}
+	{% assign contrib_index = increment contrib_index %}
+      {% endfor %}
+    </p>
+    {% endif %}
+  </div>
+</article>
+{% endfor %}

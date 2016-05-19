@@ -1,0 +1,15 @@
+main:
+  - title: "About"
+    url: /
+
+  - title: "Blog"
+    url: /blog.html
+
+  - title: "Hacking"
+    url: /hacking.html
+
+  - title: "Publications"
+    url: /publications.html
+
+  - title: "Projects"
+    url: /projects.html

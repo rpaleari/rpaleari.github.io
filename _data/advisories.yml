@@ -1,0 +1,179 @@
+- title: Modem interface exposed via USB on Samsung smartphones
+  date: 11/04/2016
+  cvs: [CVE-2016-4030, CVE-2016-4031, CVE-2016-4032]
+  link: https://github.com/ud2/advisories/tree/master/android/samsung/nocve-2016-0004
+
+- title: URL filtering bypass in Samsung module 'secfilter'
+  date: 24/02/2016
+  cvs: [CVE-2016-2567]
+  link: https://github.com/ud2/advisories/tree/master/android/samsung/nocve-2016-0003
+
+- title: Exposed provider and SQLi in SecEmailSync
+  date: 02/02/2016
+  cvs: [CVE-2016-2565, CVE-2016-2566]
+  link: https://github.com/ud2/advisories/tree/master/android/samsung/nocve-2016-0002
+
+- title: "URL filtering in kernel land: what could possibly go wrong?"
+  date: 20/01/2016
+  cvs: [CVE-2016-2036]
+  link: https://github.com/ud2/advisories/tree/master/android/samsung/nocve-2016-0001
+
+- title: Multiple vulnerabilities in Samsung SRN cameras
+  date: 12/01/2016
+  cvs: [CVE-2015-8279, CVE-2015-8280, CVE-2015-8281]
+  link: http://blog.emaze.net/2016/01/multiple-vulnerabilities-samsung-srn.html
+
+- title: Remote stack overflow on D-Link cameras
+  date: 10/11/2015
+  cvs: []
+  link: https://github.com/ud2/advisories/tree/master/embedded/dlink/nocve-2015-0002
+
+- title: Remote arbitrary file read on Huawei CPEs
+  date: 06/11/2015
+  cvs: [CVE-2015-7254]
+  link: https://github.com/ud2/advisories/tree/master/embedded/huawei/cve-2015-7254/
+
+- title: "ZipFury: Yet another Zip arbitrary file write with system privileges"
+  date: 02/11/2015
+  cvs: [CVE-2015-8780]
+  link: https://github.com/ud2/advisories/tree/master/android/samsung/nocve-2015-0001
+
+- title: "Huawei password schemes: Episode 3"
+  date: 30/09/2015
+  cvs: [CVE-2015-8085, CVE-2015-8086]
+  link: http://blog.emaze.net/2015/09/huawei-password-schemes-episode-3.html
+
+- title: Security issue in com.apple.filesystems.ntfs kext
+  date: 13/08/2015
+  cvs: [CVE-2015-5763]
+  link: https://github.com/ud2/advisories/tree/master/osx/cve-2015-5763
+
+- title: Kernel memory leak in OS X Bluetooth subsystem
+  date: 13/08/2015
+  cvs: [CVE-2015-3780]
+  link: https://github.com/ud2/advisories/tree/master/osx/cve-2015-3718
+
+- title: Type confusion in XPC service systemstatsd
+  date: 30/06/2015
+  cvs: [CVE-2015-3718]
+  link: https://github.com/ud2/advisories/tree/master/osx/cve-2015-3718
+
+- title: Multiple NULL pointer dereferences in IOFireWireFamily
+  date: 30/06/2015
+  cvs: [CVE-2015-3707]
+  link: https://github.com/ud2/advisories/tree/master/osx/cve-2015-3707
+
+- title: Multiple vulnerabilities in AppleMCCS
+  date: 30/06/2015
+  cvs: [CVE-2015-3691]
+  link: https://github.com/ud2/advisories/tree/master/osx/cve-2015-3691
+
+- title: LPE Issue in IOBluetoothHCIUserClient
+  date: 30/06/2015
+  cvs: [CVE-2015-3683]
+  link: https://github.com/ud2/advisories/tree/master/osx/cve-2015-3683
+
+- title: Multiple security issues in OS X Bluetooth driver
+  date: 12/01/2015
+  cvs: [CVE-2014-8837]
+  link: http://randomthoughts.greyhats.it/2015/01/osx-bluetooth-lpe.html
+
+- title: Mac OS X local privilege escalation (IOBluetoothFamily)
+  date: 30/10/2014
+  cvs: []
+  link: http://randomthoughts.greyhats.it/2014/10/osx-local-privilege-escalation.html
+
+- title: Backdoor access to Techboard/Syac devices
+  date: 07/07/2014
+  cvs: []
+  link: http://blog.emaze.net/2014/07/backdoor-techboardsyac.html
+
+- title: Weak firmware encryption and predictable WPA key on Sitecom routers
+  date: 24/04/2014
+  cvs: []
+  link: 20140424-sitecom-firmware-wpa.txt
+
+- title: Remote code execution on Praim thin client devices
+  date: 24/03/2014
+  cvs: []
+  link: http://blog.emaze.net/2014/03/remote-code-execution-on-praim-thin.html
+
+- title: Multiple vulnerabilities on Sitecom N300/N600 devices
+  date: 19/08/2013
+  cvs: []
+  link: 20130819-sitecom-multi.txt
+
+- title: Huawei B153 3G/UMTS router WPS weakness
+  date: 05/08/2013
+  cvs: []
+  link: 20130805-huawei-b153.txt
+
+- title: Multiple vulnerabilities on D-Link DIR-645 devices
+  date: 01/08/2013
+  cvs: [CVE-2013-7389]
+  link: 20130801-dlink-dir645.txt
+
+- title: Hard-coded accounts on multiple network cameras
+  date: 11/07/2013
+  cvs: []
+  link: 20130711-cameras.txt
+
+- title: Unauthenticated command execution on Netgear DGN devices
+  date: 03/06/2013
+  cvs: []
+  link: 20130603-netgear-dgn.txt
+
+- title: Multiple buffer overflows on Huawei SNMPv3 service
+  date: 06/05/2013
+  cvs: [CVE-2013-4630]
+  link: 20130506-huawei-snmpv3.txt
+
+- title: Authentication bypass on Netgear WNR1000
+  date: 29/03/2013
+  cvs: []
+  link: 20130329-netgear-bypass.txt
+
+- title: Unauthenticated remote access to D-Link DIR-645 devices
+  date: 28/02/2013
+  cvs: []
+  link: 20130227-dlink-dir.txt
+
+- title: Unauthenticated remote access to D-Link DCS cameras
+  date: 30/01/2013
+  cvs: []
+  link: 20130128-dlink-dcs.txt
+
+- title: Weak password encryption on Huawei products
+  date: 13/11/2012
+  cvs: [CVE-2012-4960]
+  link: 20121113-huawei-passwd.txt
+
+- title: Hard-coded credentials and command-injection vulnerabilities on BigPond 3G21WB
+  date: 12/10/2012
+  cvs: []
+  link: 20121011-bigpond-multi.txt
+
+- title: Multiple vulnerabilities in Ezylog photovoltaic management server
+  date: 11/09/2012
+  cvs: [CVE-2012-5861]
+  link: 20120911-ezylog-multi.txt
+
+- title: Unauthenticated remote code execution on D-Link ShareCenter products
+  date: 08/02/2012
+  cvs: []
+  link: 20120208-dlink-rce.txt
+
+- title: ZOHO ManageEngine ADSelfService Plus Administrative Access
+  date: 12/10/2011
+  cvs: [CVE-2011-3485]
+  link: 20111010-zoho-admin.txt
+
+- title: Multiple vulnerabilities in several IP camera products
+  date: 09/06/2011
+  cvs: []
+  link: 20110608-ipcamera-multi.txt
+
+- title: Linux Kernel 2.6.38 Remote NULL Pointer Dereference
+  date: 17/05/2011
+  cvs: [CVE-2011-1927]
+  link: 20110511-linux-null.txt

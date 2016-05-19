@@ -1,0 +1,32 @@
+---
+title: Publications
+permalink: /publications.html
+---
+<script type="text/javascript">
+  function flip_pub(id) {
+    $("#" + id).toggle();
+  }
+</script>
+{% for pub in site.data.pubs %}
+<div class="cust__pub" id="{{ pub.key }}">
+  {% assign bibid = pub.key | prepend:'bibtex:' | slugify %}
+  <!-- {{ pub.key }} -->
+  <div class="pubtitle">{{ pub.title }}</div>
+  <div class="pubauthors">{{ pub.authors }}</div>
+  <div class="pubconf">{{ pub.conf }}</div>
+  <div class="publinks" style="color: gray;">
+    [
+    {% if pub.file_paper != "" %}
+    <a href="{{ pub.file_paper }}">PDF</a>
+    {% else %}
+    not available
+    {% endif %}
+    {% if pub.file_slides != "" %}
+    | <a href="{{ pub.file_slides }}">Slides</a>
+    {% endif %}
+    | <a href="javascript:flip_pub('{{ bibid }}')">BibTeX</a>
+    ]
+  </div>
+  <div style="display: none;" class="pubbibtex" id="{{ bibid }}">{% highlight text %}{{ pub.bib }}{% endhighlight %}</div>
+</div>
+{% endfor %}

@@ -1,0 +1,168 @@
+# -*- indent-tabs-mode: nil -*-
+# Projects data
+
+- name: QTrace
+  title: QTrace
+  link: https://github.com/rpaleari/qtrace
+  body: |
+        QTrace is a "zero knowledge" system call tracer, based on
+        QEMU. Its main characteristic is that system call arguments are dumped
+        without the need to instruct the tracer about their structure.
+        As an example, QTrace can be used to easily dump `win32k.sys`
+        graphical system calls (as well as undocumented ones) despite the
+        intricacies in their arguments (and the lack of official documentation).
+
+        Additionally, QTrace includes a dynamic taint-tracking module, used to
+        (dynamically) track dependencies between system calls (e.g., one of the
+        output arguments of system call A is eventually used as an input argument
+        for system call B). Traced system calls are serialized to a Protocol
+        Buffer stream and can then be parsed off-line. QTrace includes some basic
+        Python post-processing tools. The whole infrastructure is mainly
+        targeted to Windows systems, but can be extended to support other OSes as
+        well.
+
+
+- name: ProcessTap
+  title: ProcessTap
+  link: https://github.com/firodj/processtap
+  contributors: [martignlo, sullivan]
+  body: |
+        ProcessTap is a dynamic tracing framework for analyzing closed
+        source-applications. ProcessTap is inspired by DTrace and SystemTap,
+        but it is specific for analyzing closed-source user-space
+        applications. ProcessTap leverages dynamic binary instrumentation to
+        intercept the events of interest (e.g., function calls, system call,
+        memory accesses, and conditional control transfers). Although the
+        current implementation relies on PinTool, alternative back-ends for
+        instrumentation (e.g., Valgrind, Qemu, or DynamoRIO) can be used. The
+        language used in ProcessTap for writing scripts to instrument
+        applications is Python.
+
+
+- name: HyperDbg
+  title: HyperDbg
+  link: http://code.google.com/p/hyperdbg/
+  contributors: [joystick, martignlo]
+  body: |
+        HyperDbg is a kernel debugger that leverages hardware-assisted
+        virtualization. More precisely, HyperDbg is based on a minimalistic
+        hypervisor that is installed while the system runs. Compared to
+        traditional kernel debuggers (e.g., WinDbg, SoftIce, Rasta R0 Debugger)
+        HyperDbg is completely transparent to the kernel and can be used to debug
+        kernel code without the need of serial (or USB) cables.
+
+
+- name: KEmuFuzzer
+  title: KEmuFuzzer
+  link: http://code.google.com/p/kemufuzzer/
+  contributors: [martignlo, gianz]
+  body: |
+        KEmuFuzzer is protocol-specific fuzzer for system virtual
+        machines. KEmuFuzzer generates floppy images to boot a virtual machine
+        and to execute a specific test-case. The same test-case is executed
+        also in an _oracle_, based on hardware-assisted virtualization. The
+        states obtained are compared to detect defects in the virtual
+        machine. Test-cases are generated using a special compiler that applies
+        certain mutations before compiling.
+
+
+- name: EmuFuzzer
+  title: EmuFuzzer
+  link: http://martignlo.greyhats.it/projects/redpills.html
+  contributors: [martignlo, gianz]
+  body: |
+        EmuFuzzer is a fuzzer for CPU emulators. EmuFuzzer "stresses" a CPU
+        emulator with specially crafted test-cases, representing registers and
+        memory configurations, to verify whether the CPU is properly emulated
+        or not. EmuFuzzer detects improper behaviours of the emulator by
+        running the same test-case concurrently on the emulated and on the
+        physical CPUs and by comparing the state of the two after the
+        execution. Differences in the state testify defects in the code of the
+        emulator.
+
+        Currently, CPU emulators supported by EmuFuzzer include
+        [QEMU](http://www.nongnu.org/qemu/),
+        [BOCHS](http://bochs.sourceforge.net/),
+        [Valgrind](http://valgrind.org/), and
+        [PIN](http://www.pintool.org/). For more details see the paper [Testing
+        CPU emulators](/publications.html#issta09:emufuzzer).
+
+        We also used EmuFuzzer to discover red-pills: programs or procedures
+        capable of identifying if they are executed on a physical CPU or on an
+        emulated CPU. Such red-pills can be used in malicious programs to
+        impede dynamic analysis attempts. For more details see the paper [A
+        fistful of red-pills: How to automatically generate procedures to
+        detect CPU emulators](/publications.html#woot09:pills) and the [web
+        page devoted to the
+        project](http://martignlo.greyhats.it/projects/redpills.html). EmuFuzzer
+        red-pills are [available for download](/projects/pills.html).
+
+
+- name: WUSSTrace
+  title: WUSSTrace
+  link: https://github.com/lbull/wusstrace
+  contributors: [martignlo]
+  body: |
+        WUSSTrace is a user-space syscall tracer for Microsoft Windows
+        developed for fine grained syscall tracing: it supports the majority of
+        Windows system calls (except GUI system calls), the majority of
+        argument types, and dumps faithfully all the supported types. WUSSTrace
+        produces easy-to-parse XML traces leveraging the [Boost serialization
+        library](http://www.boost.org/doc/libs/release/libs/serialization/).
+        Tracing is performed by injecting a shared library in the address space
+        of the traced process and by hooking the stubs `KiFastSystemCall` and
+        `KiIntSystemCall`, from `ntdll.dll`.
+
+
+- name: FluXOR
+  title: FluXOR
+  link:
+  contributors: [ema, martignlo]
+  body: |
+        FluXOR is a system to detect and monitor fast-flux service networks. Its
+        monitoring and detection strategies entirely rely on the analysis of a
+        set of features observable from the point of view of a victim of the
+        scams perpetrated by the botnets.
+
+        FluXOR is presented into more detail in the paper [FluXOR: detecting
+        and monitoring fast-flux service
+        networks](/publications.html#dimva08:fluxor).
+
+
+- name: PyEA
+  title: PyEA
+  link:
+  contributors: [martignlo]
+  body: |
+        PyEA is a hybrid static/dynamic code analyser written in Python. The
+        analyser was originally developed to statically analyse IA-32 malicious
+        programs, but has soon evolved into a generic analyser for compiled
+        programs. PyEA currently supports PE and ELF executables, disassembles
+        executables using a recursive disassembler, and translates each machine
+        instruction into an intermediate form, that makes side effects
+        explicit. The analyses work directly on the intermediate representation
+        and include graph dominance analysis, static and dynamic data- and
+        control-dependency analyses, liveness and reachability, and loop
+        analysis.
+
+        PyEA contains a process execution tracer for GNU/Linux based on
+        `ptrace()` and interfaces with the
+        [STP](http://sites.google.com/site/stpfastprover/) constraint solver
+        (using the [PySTP](http://security.di.unimi.it/~roberto/pystp/)
+        extension module). Support for hybrid analysis of PHP bytecode has also
+        been introduced into this framework.
+
+        I have used PyEA for my [master thesis](/pubs/thesis-ms.pdf). Moreover,
+        the fuzzer described in the paper [A Smart Fuzzer for x86
+        Executables](/publications.html#sess07:smartfuzzer) is implemented on
+        top of PyEA. [Lorenzo](http://martignlo.greyhats.it) has also used PyEA
+        for several papers.
+
+
+- name: PySTP
+  title: PySTP
+  link: http://security.di.unimi.it/~roberto/pystp/
+  body: |
+        PySTP is a [Python](http://www.python.org) extension module that
+        interfaces with [STP](http://sites.google.com/site/stpfastprover/), a
+        decision procedure for the theory of fixed-width bitvectors and arrays.

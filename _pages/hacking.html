@@ -1,0 +1,35 @@
+---
+title: Security advisories
+permalink: /hacking.html
+---
+
+<p>
+   These are some of the security advisories I published during the last
+   years. Most of them were released on BugTraq, my blog or on
+   <a href="https://github.com/ud2/advisories">this</a> repository.
+</p>
+
+<table id="cust__hacking">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+      <th>ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for advisory in site.data.advisories %}
+    <tr>
+      <td>{{ advisory.date }}</td>
+      <td><a href=
+	     {% if advisory.link contains "http" and advisory.link contains "://" %}
+	     "{{ advisory.link }}"
+	     {% else %}
+	     "{{ advisory.link | prepend: "/advisories/" | prepend: base_path }}"
+	     {% endif %}
+	     >{{ advisory.title }}</a></td>
+      <td>{{ advisory.cvs | join: ", " }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
