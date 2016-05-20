@@ -2,7 +2,7 @@
 layout: single
 title: 'Time to fill OS X (Blue)tooth: Local privilege escalation vulnerabilities in Yosemite'
 date: '2015-01-12T15:59:00.001+01:00'
-modified_time: '2015-02-08T18:28:47.108+01:00'
+modified: '2015-02-08T18:28:47.108+01:00'
 excerpt: A post about multiple security issues affecting the IOBluetoothHCIController OS X kernel extension (Yosemite).
 tags:
 ---

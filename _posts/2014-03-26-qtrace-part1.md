@@ -2,7 +2,7 @@
 layout: single
 title: Introducing QTrace, a "zero knowledge" system call tracer
 date: '2014-03-26T16:28:00.000+01:00'
-modified_time: '2015-01-10T19:34:29.586+01:00'
+modified: '2015-01-10T19:34:29.586+01:00'
 excerpt: "QTrace is a syscall tracer that requires no information about the structure of arguments, as it infers their format by observing kernel memory access patterns."
 tags:
 ---

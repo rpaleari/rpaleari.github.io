@@ -2,7 +2,7 @@
 layout: single
 title: Fast coverage analysis for binary applications
 date: '2015-02-02T15:38:00.000+01:00'
-modified_time: '2015-02-02T15:38:58.491+01:00'
+modified: '2015-02-02T15:38:58.491+01:00'
 excerpt: A description of FuzzTrace, an hardware-assisted tracing tool for analyzing closed-source application, using Intel BTS.
 tags:
 ---

@@ -2,7 +2,7 @@
 layout: single
 title: Owning Samsung phones for fun (...but with no profit :-))
 date: '2013-03-19T14:55:00.002+01:00'
-modified_time: '2013-03-19T15:33:15.356+01:00'
+modified: '2013-03-19T15:33:15.356+01:00'
 excerpt: An overview of multiple security vulnerabilities affecting some Samsung proprietary Android components.
 tags:
 ---

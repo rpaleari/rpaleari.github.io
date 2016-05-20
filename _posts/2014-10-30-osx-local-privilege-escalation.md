@@ -2,7 +2,7 @@
 layout: single
 title: Mac OS X local privilege escalation (IOBluetoothFamily)
 date: '2014-10-30T11:54:00.000+01:00'
-modified_time: '2014-10-31T10:08:25.826+01:00'
+modified: '2014-10-31T10:08:25.826+01:00'
 excerpt: Discussion of a security vulnerability affecting OS X kernel extension IOBluetoothFamily, exploitable by a local attacker to gain root privileges.
 tags:
 ---
