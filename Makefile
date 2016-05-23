@@ -8,7 +8,7 @@ SASS_CACHE=.sass-cache
 JEKYLL_GEN_PUB=_data/pubs.json
 
 all: serve
-.phony: all serve clean dist-clean
+.phony: all serve drafts clean dist-clean
 
 # These two rules are to move the Sass cache to $TMPDIR, by sym-linking
 # .sass-cache to $TMPDIR/sass-cache/
@@ -23,6 +23,9 @@ $(JEKYLL_GEN_PUB): _utils/pubs/pubs.bib
 
 serve: $(SASS_CACHE) $(JEKYLL_GEN_PUB)
 	jekyll serve
+
+drafts: $(SASS_CACHE) $(JEKYLL_GEN_PUB)
+	jekyll serve --drafts --future
 
 clean:
 	-rm -fr $(SASS_CACHE)
