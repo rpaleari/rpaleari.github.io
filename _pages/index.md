@@ -1,9 +1,9 @@
 ---
-title: About
+title:
 permalink: /
 ---
 
-Since late 2011 I've worked as a senior consultant at
+From late 2011 to 2016, I've worked as a senior consultant at
 [Emaze](http://blog.emaze.net/), a security company based in Milan, Italy. Here
 my activities included reverse engineering (mainly on embedded devices),
 penetration testings, and training courses.
