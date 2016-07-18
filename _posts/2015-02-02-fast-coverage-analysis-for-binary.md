@@ -258,11 +258,11 @@ random array of 1024 integers (C code for this test case is available
 
 {% raw %}
 <figure class="half">
-  <a href="{{ base_path }}/images/posts/fuzztrace-bisect-large.png">
-	<img src="/images/posts/fuzztrace-bisect.png">
+  <a href="/images/posts/fuzztrace-bisect-large.png">
+    <img src="/images/posts/fuzztrace-bisect.png">
   </a>
-  <a href="{{ base_path }}/images/posts/fuzztrace-quicksort-large.png">
-	<img src="/images/posts/fuzztrace-quicksort.png">
+  <a href="/images/posts/fuzztrace-quicksort-large.png">
+    <img src="/images/posts/fuzztrace-quicksort.png">
   </a>
   <figcaption>Hit maps for the bisect() (on the left) and quicksort() (on the right) functions</figcaption>
 </figure>
