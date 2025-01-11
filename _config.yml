@@ -5,7 +5,7 @@ name                     : &myself "Roberto Paleari"
 title                    : *myself
 title_separator          : "-"
 description              : "Roberto Paleari's homepage"
-url                      : # the base hostname & protocol for your site
+url                      : "https://roberto.greyhats.it"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   :
