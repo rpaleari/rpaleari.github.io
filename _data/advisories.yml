@@ -120,7 +120,7 @@
 
 - title: Unauthenticated command execution on Netgear DGN devices
   date: 03/06/2013
-  cvs: []
+  cvs: [CVE-2024-12847]
   link: 20130603-netgear-dgn.txt
 
 - title: Multiple buffer overflows on Huawei SNMPv3 service
@@ -130,7 +130,7 @@
 
 - title: Authentication bypass on Netgear WNR1000
   date: 29/03/2013
-  cvs: []
+  cvs: [CVE-2013-3316]
   link: 20130329-netgear-bypass.txt
 
 - title: Unauthenticated remote access to D-Link DIR-645 devices
